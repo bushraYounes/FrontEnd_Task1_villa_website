@@ -1,0 +1,98 @@
+.accordion {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    background-color: #fafafa;
+
+
+    .accordionContainer {
+        display: flex;
+        flex-direction: column;
+
+        .accordion-item {
+
+            &:first-child {
+                .accordion-button {
+                    &.collapsed {
+                        color: rgb(0, 0, 0);
+                    }
+
+                    &.notCollapsed {
+                        color: #f35525;
+                    }
+                }
+
+                .accordion-collapse {
+                    &.show {
+                        display: block;
+                    }
+                }
+            }
+
+            .accordion-button {
+                display: flex;
+                width: 100%;
+                outline: none;
+                box-shadow: none;
+                font-size: 17px;
+                font-weight: 500;
+                color: #1e1e1e;
+                cursor: pointer;
+                border: none;
+                padding: 1%;
+                border-bottom: 1px solid lightgray;
+                background-color: transparent;
+
+                &.collapsed {
+
+                    color: rgb(0, 0, 0);
+                }
+
+                &.notCollapsed {
+                    background-color: #fafafa;
+                    color: #f35525;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .accordion-collapse {
+                display: none;
+
+                &.show {
+                    display: block;
+                    background-color: #fafafa;
+                }
+            }
+
+            .accordion-body {
+                padding: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .accordionContainer {
+           
+            width: 100%;
+            .accordion-item {
+              
+                .accordion-button {
+                    font-size: 3vw;
+                    font-weight: 500;
+                    text-align: left;
+                }
+
+                .accordion-body {
+                    font-size: 3vw;
+                }
+
+            }
+        }
+
+    }
+}

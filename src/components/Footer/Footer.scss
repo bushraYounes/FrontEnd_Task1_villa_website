@@ -1,0 +1,46 @@
+.footer {
+    background-color: rgb(0, 0, 0);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .footerContainer {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       // background-color: aqua;
+
+        p {
+            font-size: 2vw;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            //text-align: center;
+           
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        min-height: 50px;
+        
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        min-height: 100px;
+    }
+
+    @media (min-width: 1024px) {
+        min-height: 100px;
+        .footerContainer{
+            p{
+                font-size: 2vw;
+            }
+        }
+       
+    }
+}

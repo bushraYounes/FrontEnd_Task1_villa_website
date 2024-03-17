@@ -1,0 +1,317 @@
+.featured {
+
+    display: flex;
+
+
+    .featuredContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2%;
+
+        .imageSection {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            width: 30%;
+
+            .image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                position: relative;
+                display: inline-block;
+
+                img {
+                    overflow: hidden;
+                    object-fit: cover;
+                    display: block;
+                    max-width: 100%;
+                }
+
+                .sticker {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #f35525;
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    bottom: -15%;
+                    left: -50px;
+                    border-radius: 50%;
+                }
+            }
+
+
+        }
+
+        .contentSection {
+            width: 41%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2%;
+
+            .header {
+                height: 10%;
+                padding: 1%;
+
+                h6 {}
+
+            }
+
+            .title {
+                width: 70%;
+                height: 30%;
+
+                h2 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-top: 20px;
+                    line-height: 56px;
+                }
+
+            }
+
+            .accordionSection {
+                display: flex;
+                height: 56%;
+                align-items: center;
+
+            }
+        }
+
+        .infoTabelSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+
+        .featuredContainer {
+            flex-direction: column;
+            gap: 30px;
+
+
+            .imageSection {
+                width: 100%;
+
+
+                .image {
+
+                    .sticker {
+
+                        width: 50px;
+                        height: 50px;
+                        bottom: -20px;
+                        left: -25px;
+
+                        img {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+
+            .contentSection {
+
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                .header {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    h6 {
+                    }
+                }
+
+                .title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    height: 40%;
+
+                    h2 {
+                        font-size: 8vw;
+                        font-weight: 700;
+                        line-height: 12vw;
+                    }
+                }
+
+                .accordionSection {
+                    width: 100%;
+
+                    margin-bottom: 0%;
+                }
+
+            }
+
+            .infoTabelSection {
+                width: 100%;
+                height: 100%;
+                margin-top: 0px;
+            }
+        }
+
+    }
+
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .featuredContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 10px;
+            row-gap: 30px;
+
+
+            .imageSection {
+                width: 100%;
+
+
+                .image {
+                    .sticker {
+                        width: 50px;
+                        height: 50px;
+                        bottom: -10px;
+                        left: -20px;
+
+                        img {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+
+            .contentSection {
+                width: 100%;
+
+                padding-left: 4%;
+
+                .header {
+                    height: 10%;
+                    padding: 1%;
+
+                    h6 {}
+
+                }
+
+                .title {
+
+                    width: 100%;
+                    height: 40%;
+
+                    h2 {
+                        font-size: 5vw;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        margin-top: 20px;
+                        line-height: 56px;
+                    }
+
+                }
+
+                .accordionSection {
+                    height: 49%;
+                }
+            }
+
+            .infoTabelSection {
+                width: 100%;
+                grid-column: span 2;
+
+                .infoTableContainer {
+
+
+
+                    ul {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+
+                        li {
+                            border: none;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .featuredContainer {
+            .imageSection {
+                width: 30%;
+               
+                img {
+                    height: 100%;
+                }
+
+                .image {
+                    height: 100%;
+                    
+                    .sticker {
+                        width: 70px;
+                        height: 70px;
+                        bottom: -10px;
+                        left: -20px;
+                        
+
+                        img {
+                           height: 60%;
+                            
+                        }
+                    }
+                }
+
+            }
+
+            .contentSection {
+
+                gap: 0px;
+
+                .header {
+                    //background-color: palegreen;
+                    height: 10%;
+                    padding: 1%;
+
+
+                    h6 {}
+
+                }
+
+                .title {
+
+                    width: 100%;
+                    height: 30%;
+
+                    h2 {
+                        font-size: 3vw;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        line-height: 3vw;
+                    }
+
+                }
+
+                .accordionSection {
+                    height: 49%;
+                }
+            }
+        }
+    }
+}

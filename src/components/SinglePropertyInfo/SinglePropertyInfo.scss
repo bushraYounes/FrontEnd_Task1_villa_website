@@ -1,0 +1,152 @@
+.singlePropertyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    padding: 5%;
+
+    .singlePropertyInfoContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 5%;
+
+        .contentSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            width: 65%;
+            
+
+            .imageContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .categoryContainer {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                
+                padding-top: 1%;
+                padding-bottom: 1%;
+
+                .category {
+                    display: flex;
+                    background-color: #fbd9cf;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    font-size: 3vw;
+                    color: #1e1e1e;
+                    padding: 5px 12px;
+                    display: inline-block;
+
+                }
+            }
+
+            .addressContainer {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                
+                padding-top: 1%;
+                padding-bottom: 1%;
+
+                h4 {
+                    font-size: 4vw;
+                    border-bottom: 1px solid #eee;
+
+                }
+            }
+
+            .paragraphContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                p{
+                   
+                    font-size: 3vw;
+                }
+               
+            }
+
+            .accordionSectionContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+        }
+
+        .infoTabelSection {
+            display: flex;
+            height: 100%;
+            width: 30%;
+            
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .singlePropertyInfoContainer
+        {
+            flex-direction: column;
+            gap: 30px;
+            .contentSection{
+                width: 100%;
+               
+            }
+
+            .infoTabelSection{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+
+    }
+
+    @media (min-width: 768px) {
+
+        .singlePropertyInfoContainer
+        {
+            .contentSection{
+                .categoryContainer{
+                    .category{
+                        font-size: 1vw;
+                    }
+                }
+                .addressContainer{
+                    h4{
+                        font-size: 2vw;
+                    }
+                }
+                .paragraphContainer{
+                    p{
+                        font-size: 1vw;
+                    }
+                }
+               
+            }
+
+            .infoTabelSection{
+               
+            }
+        }
+    }
+}

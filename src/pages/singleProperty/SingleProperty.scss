@@ -1,0 +1,51 @@
+.singleProperty{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .heroSection {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+            
+            .heroImageContainer{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+        }
+
+        .singlePropertySection{
+            width: 80%;
+        }
+
+        .bestDealSection{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &.bestDeal {
+            padding-top: 50px;
+            margin-top: 50px;
+            background-color: #fafafa;
+        }
+    }
+}

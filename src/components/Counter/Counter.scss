@@ -1,0 +1,64 @@
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #ffeee9;
+    position: relative;
+    border-radius: 10px;
+    width:20vw;
+    padding: 1vw 0px;
+    display: inline-block;
+
+    .counterContainer {
+        //background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 2%;
+
+
+        .number {
+            width: 39%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: 3vw;
+                color: #f35525;
+            }
+        }
+
+        .text {
+            width: 59%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+
+            p {
+                text-align: left;
+                font-size: 1.5vw;
+                color: #1e1e1e;
+                font-weight: 600;
+                line-height: 2.5vw;
+            }
+        }
+    }
+
+    &::after {
+        position: absolute;
+        width: 4vw;
+        height: 4vw;
+        background-color: #f35525;
+        border-radius: 50%;
+        content: '';
+        right: -2vw;
+        top: -2vw;
+    }
+
+   
+}

@@ -1,0 +1,312 @@
+.propertiesList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .propertiesListContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .topSection {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .titleSection {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+
+
+                h6 {}
+
+                h2 {
+                    width: 40%;
+                    font-size: 40px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-top: 20px;
+                    line-height: 56px;
+                }
+
+
+            }
+
+            .buttonsSection {
+                padding: 2%;
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 1%;
+                align-items: center;
+
+
+                .buttonSection {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+
+                    button {
+                        font-size: 16px;
+                        font-weight: 500;
+                        background-color: #1e1e1e;
+                        border-radius: 5px;
+                        border: none;
+                        height: 50px;
+                        line-height: 50px;
+                        display: inline-block;
+                        padding: 0px 25px;
+                        color: #fff;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #f35525;
+                        }
+                    }
+
+                    &:first-child {
+                        button {
+                            background-color: #f35525;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .bottomSection {
+            width: 100%;
+            padding: 5% 1%;
+            justify-content: center;
+            display: flex;
+
+            ul {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-row-gap: 10px;
+                grid-column-gap: 20px;
+                list-style: none;
+                flex-wrap: wrap;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        .paginationSection {
+            width: 100%;
+            padding: 5% 1%;
+            justify-content: center;
+            align-items: center;
+
+            .pagination {
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                gap: 10px;
+
+                .page-num {
+                    display: flex;
+                    background-color: #000000;
+                    padding: 5px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    font-weight: 400;
+                    width: 50px;
+                    height: 50px;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+
+                    &:hover {
+                        background-color: #f35525;
+
+                    }
+                }
+
+                .active {
+                    background-color: #f35525;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .propertiesListContainer {
+            .topSection {
+                .titleSection {
+                   
+                    h2 {
+                        width: 90%;
+                        font-size: 5vw;
+                        line-height: 6vw;
+                    }
+
+
+                    h6 {
+                        font-size: 3vw;
+                        
+                    }
+                }
+
+                .buttonsSection {
+                    width: 100%;
+                    gap: 1%;
+                    padding: 1%;
+                    height: 7vw;
+                    justify-content: center;
+
+                    .buttonSection {
+
+                        height: 100%;
+
+                        button {
+                            font-size: 2.1vw;
+                            font-weight: 500;
+                            border-radius: 0.5vw;
+                            line-height: 2vw;
+                            padding: 1.5vw 3vw;
+                            height: 100%;
+
+                        }
+                    }
+                }
+
+            }
+
+            .bottomSection {
+                ul {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .propertiesListContainer {
+
+            .topSection {
+
+
+                .titleSection {
+
+                    h2 {
+                        width: 60%;
+                        font-size: 5vw;
+                        line-height: 6vw;
+                    }
+
+                    h6 {
+                        font-size: 3vw;
+                       
+                    }
+                }
+
+                .buttonsSection {
+                    width: 100%;
+                    gap: 1%;
+                    padding: 1%;
+                    height: 7vw;
+                    justify-content: center;
+
+                    .buttonSection {
+                        //padding: 0px vw;
+
+                        height: 100%;
+
+                        button {
+                            font-size: 2.1vw;
+                            font-weight: 500;
+                            border-radius: 0.5vw;
+                            line-height: 2vw;
+                            padding: 1.5vw 3vw;
+                            height: 100%;
+
+                        }
+                    }
+                }
+
+            }
+
+            .bottomSection {
+                ul {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+            }
+        }
+
+
+    }
+
+    @media (min-width: 1024px) {
+        .propertiesListContainer {
+
+            .topSection {
+                
+                .titleSection {
+                    width: 100%;
+
+                    h2 {
+                        width: 30%;
+                        font-size: 3vw;
+                        font-weight: 700;
+                        line-height: 4vw;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                    h6 {
+                        font-size: 3vw;
+                    }
+                }
+
+                .buttonsSection {
+                    
+                    width: 100%;
+                    gap: 0.8%;
+                    padding: 1%;
+                    height: 5vw;
+                    justify-content: center;
+
+                    .buttonSection {
+
+                        height: 100%;
+
+                        button {
+                            font-size: 1vw;
+                            font-weight: 500;
+                            border-radius: 0.5vw;
+                            line-height: 1vw;
+                            padding: 0.1vw 2vw;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

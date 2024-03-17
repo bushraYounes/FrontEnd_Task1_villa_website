@@ -1,0 +1,338 @@
+.bestDeal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .bestDealContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+
+        .topSection {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+
+            .headerSection {
+
+                width: 40%;
+
+                h6 {}
+
+                h2 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-top: 20px;
+                    line-height: 56px;
+                }
+            }
+
+            .buttonsSection {
+                
+                width: 60%;
+                justify-content: flex-end;
+                align-items: flex-end;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 5%;
+                direction: rtl;
+
+
+                .buttonSection {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+
+                    button {
+                        font-size: 3vw;
+                        font-weight: 500;
+                        background-color: #1e1e1e;
+                        border-radius: 5px;
+                        border: none;
+                        line-height: 5vw;
+                        display: inline-block;
+                        padding: 0px 2vw;
+                        color: #fff;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #f35525;
+                        }
+
+                    }
+
+                    &:last-child {
+                        button {
+                            background-color: #f35525;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+
+        .bottomSection {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+            gap: 3%;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+
+
+
+            .infoTableContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                width: 27%;
+
+            }
+
+            .imageContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 42%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .detailesContainer {
+                display: flex;
+                flex-direction: column;
+                width: 25%;
+                justify-content: space-between;
+                gap: 2%;
+                
+
+                h4 {
+                    font-size: 6vwx;
+                    font-weight: 600;
+                    text-align: left;
+
+                }
+
+                p {
+                    
+                    font-size: 2vw;
+                    line-height: 3vw;
+                    color: #4a4a4a;
+
+                }
+
+                .buttonSection {
+                   
+                    display: flex;
+                    justify-content: center;
+                    width: 80%;
+                    padding-top: 4%;
+
+                }
+
+            }
+        }
+    }
+
+
+    @media (max-width: 1024px) {
+
+
+        .bestDealContainer {
+            gap: 1%;
+
+
+            .topSection {
+                flex-direction: column;
+
+                justify-content: center;
+                padding-top: 1%;
+                padding-bottom: 1%;
+
+                .headerSection {
+                    width: 100%;
+
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 5%;
+
+                    h2 {
+                        font-size: 4vw;
+                        font-weight: 700;
+                        line-height: 7vw;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                }
+
+                .buttonsSection {
+                    width: 100%;
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    .buttonSection {
+                        button {
+                            font-size: 1.5vw;
+                            font-weight: 500;
+                            line-height: 4vw;
+                            padding: 0px 3vw;
+                            border-radius: 0.5vw;
+
+                        }
+                    }
+                }
+            }
+
+            .bottomSection {
+
+                flex-direction: column;
+                width: 100%;
+                gap: 1%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+
+                .infoTableContainer {
+                    width: 100%;
+                    padding-top: 1%;
+                    padding-bottom: 1%;
+                }
+
+                .imageContainer {
+                    width: 100%;
+                    padding-top: 1%;
+                    padding-bottom: 1%;
+                }
+
+                .detailesContainer {
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+
+                    .buttonSection {
+                        width: 40%;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+
+    @media (min-width: 1024px) {
+
+        .bestDealContainer {
+            gap: 4%;
+
+            .topSection {
+                flex-direction: row;
+
+                justify-content: center;
+                padding-top: 1%;
+                padding-bottom: 1%;
+
+                .headerSection {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: left;
+
+
+
+                    h6 {}
+
+                    h2 {
+                        font-size: 3vw;
+                        font-weight: 700;
+                        line-height: 4vw;
+                        justify-content: center;
+                        text-align: left;
+                        width: 100%;
+
+                    }
+                }
+
+                .buttonsSection {
+                    width: 60%;
+                    display: flex;
+                    direction: ltr;
+                    gap: 2%;
+
+                    .buttonSection {
+
+                        button {
+
+                            font-size: 1.2vw;
+                            font-weight: 500;
+                            line-height: 3vw;
+                            padding: 0px 2vw;
+                            border-radius: 0.5vw;
+                        }
+                    }
+                }
+            }
+
+            .bottomSection {
+
+                width: 100%;
+                gap: 1%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+
+                .infoTableContainer {
+                    
+                    padding-top: 1%;
+                    padding-bottom: 1%;
+                    height: 100%;
+                }
+
+                .imageContainer {
+
+                    height: 100%;
+
+                }
+
+                .detailesContainer {
+                    padding-left: 1vw;
+
+                    h4 {
+                        font-size: 1.3vw;
+                    }
+
+                    p {
+
+                        font-size: 1vw;
+                        line-height: 1.5vw;
+                    }
+
+
+                    .buttonSection {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,226 @@
+.navBar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    transition: all 0.5s ease 0s;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.687);
+
+    &.sticky {
+        height: 80px !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0;
+        right: 0;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .navBarContainer {
+        display: flex;
+        width: 85vw;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+
+        h1 {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            width: 60%;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2%;
+
+            ul {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                gap: 5%;
+                list-style: none;
+
+                li {
+                    color: #7a7a7a;
+
+                    a {
+                        color: #7a7a7a;
+                        text-decoration: none;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: #f35525;
+                        }
+
+                        &.active {
+                            color: #f35525;
+                        }
+                    }
+                }
+            }
+
+            .buttonSection {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25%;
+            }
+        }
+    }
+
+    @media (max-width: 300px) {
+
+        &.sticky {
+            height: 70px !important;
+        }
+
+        .navBarContainer {
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1%;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                width: 100%;
+                display: flex;
+                font-size: 4vw;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .items {
+                width: 100%;
+                padding: 2%;
+                display: flex;
+                justify-content: center;
+
+
+                ul {
+                    width: 100%;
+                    justify-content: center;
+                    gap: 3%;
+
+                    li {
+                        a {
+                            font-size: 3vw;
+                        }
+                    }
+                }
+
+                .buttonSection {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+        }
+    }
+
+
+    @media (min-width:300px) and (max-width: 768px) {
+        &.sticky {
+            height: 80px !important;
+        }
+
+        .navBarContainer {
+            width: 90vw;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+
+            h1 {
+                width: 100%;
+                display: flex;
+                font-size: 3vw;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+            }
+
+            .items {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                gap: 1vh;
+
+
+                ul {
+
+                    width: 100%;
+                    justify-content: center;
+                    gap: 3%;
+
+
+                    li {
+                        a {
+                            font-size: 2vw;
+                        }
+                    }
+                }
+
+                .buttonSection {
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        &.sticky {
+            height: 80px !important;
+        }
+
+        .navBarContainer {
+
+            .items {
+                width: 80%;
+
+                ul {
+                    li {
+                        a {
+                            font-size: 1.4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        &.sticky {
+            height: 80px !important;
+        }
+
+        .navBarContainer {
+
+            .items {
+                ul {
+                    li {
+                        a {
+                            font-size: 1.2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
